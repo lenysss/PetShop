@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="petShop.css">
+    <script src="petShop.js"></script>
+    <link rel="icon" href="">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Pet-Shop</h1>
+        <i class="bi bi-shop"></i>
+    </header>
+
+    <main class="principal">
+
+        <div class="menu">
+            <h1>MENU</h1>
+            <div class="menuLateral">
+    
+                <a href="#" onclick="inicio()">
+                    <i class="bi bi-house-fill"></i>
+                    <label for="">Inicio</label>
+                </a>
+    
+                <a href="#" onclick="produtos()">
+                    <i class="bi bi-bag-fill"></i>
+                    <label for="">Produtos</label>
+                </a>
+    
+                <a href="#" onclick="doacoes()">
+                    <i class="bi bi-box2-heart-fill"></i>
+                    <label for="">Doações</label>
+                </a>
+    
+                <a href="#" onclick="portifolio()">
+                    <i class="bi bi-at"></i>
+                    <label for="">Portifólio</label>
+                </a>
+            </div>
+        </div>
+    
+        <div class="inicio" id="info_inicio">
+
+            <div class="card">
+                <h1>O melhor para o seu pet é aqui.</h1>
+                <div class="pe">
+                    <img src="https://cdn.statically.io/img/blazepress.com/.image/c_fit,h_600,w_600/MTMxMTIzNDYxNzYxNTE3NTc4/cute-smiling-animals-25jpg.jpg?quality=100&f=auto" alt="">
+                    <p>
+                        Nossa loja oferece uma ampla variedade de produtos para cães, gatos, aves, peixes e outros animais exóticos.
+                        Temos alimentos de alta qualidade, brinquedos, acessórios, produtos de higiene e muito mais. 
+                        Além disso, temos uma equipe de profissionais altamente treinados e experientes que estão sempre disponíveis para ajudá-lo a escolher 
+                        os melhores produtos para as necessidades do seu animal de estimação.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="produtos" id="info_produtos" style="display: none;">
+            <div class="produtospets">
+                <div class="card1">
+                    <img src="https://th.bing.com/th?id=OP.A44g7Dr%2fxR%2f1bQ474C474&w=248&h=248&o=5&pid=21.1" alt="">
+                    <label for="">Caminha para cachorro</label>
+                    <label for="">R$:39,50</label>
+                    <button type="button">Fazer pedido</button>
+                </div>
+
+                <div class="card2">
+                    <img src="https://th.bing.com/th?id=OP.uVxcE4X9q2HMIQ474C474&w=248&h=248&o=5&pid=21.1" alt="">
+                    <label for="">Caminha para cachorro</label>
+                    <label for="">R$:199,90</label>
+                    <button type="button">Fazer pedido</button>
+                </div>
+
+                <div class="card3">
+                    <img src="https://th.bing.com/th?id=OP.6WzwajNy4FImAQ474C474&w=248&h=248&o=5&pid=21.1" alt="">
+                    <label for="">Coleira para cachorro</label>
+                    <label for="">R$:79,00</label>
+                    <button type="button">Fazer pedido</button>
+                </div>
+
+                <div class="card4">
+                    <img src="https://th.bing.com/th?id=OP.gSsf9l%2fQtyxgFQ474C474&w=248&h=248&o=5&pid=21.1" alt="">
+                    <label for="">Coleira para cachorro</label>
+                    <label for="">R$:79,00</label>
+                    <button type="button">Fazer pedido</button>
+                </div>
+
+                <div class="card5">
+                    <img src="https://th.bing.com/th?id=OP.aeHFlY7T%2bT13gw474C474&w=248&h=248&o=5&pid=21.1" alt="">
+                    <label for="">Comedouro duplo para cachorro</label>
+                    <label for="">R$:134,39</label>
+                    <button type="button">Fazer pedido</button>
+                </div>
+
+                <div class="card6">
+                    <img src="https://th.bing.com/th?id=OP.dDRp0k%2b1%2f7VRiQ474C474&w=248&h=248&o=5&pid=21.1" alt="">
+                    <label for="">Casinha para cachorro</label>
+                    <label for="">R$:128,13</label>
+                    <button type="button">Fazer pedido</button>
+                </div>
+
+                <div class="card7">
+                    <img src="https://th.bing.com/th?id=OP.A8rrFDU1zeWMRA474C474&w=248&h=248&o=5&pid=21.1" alt="">
+                    <label for="">Peitoral para cachorro</label>
+                    <label for="">R$:149,00</label>
+                    <button type="button">Fazer pedido</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="doacao" style="display: none;" id="doacoes">
+            <h1>Pets para doação</h1>
+            <div class="petsdoacoes">
+                <div class="cachorros">
+                    <div class="c1">
+                        <img src="https://th.bing.com/th/id/OIP.CjJXuzT1vxUJmPnFXL654gHaGD?pid=ImgDet&rs=1" alt="">
+                        <button>Adotar</button>
+                    </div>
+
+                    <div class="c2">
+                        <img src="https://th.bing.com/th/id/R.377edb3138b14c6a2cbf39b9125016c8?rik=rgWsb7P%2beKweDA&pid=ImgRaw&r=0" alt="">
+                        <button>Adotar</button>
+                    </div>
+
+                    <div class="c3">
+                        <label for="">Premium</label>
+                        <img src="https://th.bing.com/th/id/OIP.GSU2uzQNCdPT-o8D5kIftQHaE8?pid=ImgDet&rs=1" alt="">
+                        <button>Adotar</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    
+</body>
+</html>
